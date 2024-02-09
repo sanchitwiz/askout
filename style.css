@@ -1,56 +1,53 @@
-/* Base styles */
-.main {
+.main{
     background-color: #ffd7c0;
     color: #212121;
     overflow: hidden;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 }
-
-.bgImage {
+.bgImage{
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-.container {
+.container{
     text-align: center;
     margin: auto;
 }
-
-#heading {
+#heading{
     font-size: 50px;
 }
-
-.sigh {
+.sigh{
     padding-top: 10px;
+    img{
+        border-radius: 20px;
+        height: 440px;
+    }
+    padding-bottom: 30px;
 }
-
-.sigh img {
-    border-radius: 20px;
-    height: 440px;
+.buttons{
+    #yes{
+        height: 50px;
+        width: 150px;
+        margin-left: -300px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #no{
+        cursor: pointer;
+        position: absolute;
+        height: 50px;
+        width: 150px;
+        margin-left: 160px;
+        border-radius: 10px;
+        transition: left 0.5s, top 0.5s;
+    }
 }
-
-.buttons #yes {
-    height: 50px;
-    width: 150px;
-    margin-left: -300px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.buttons #no {
-    cursor: pointer;
-    position: absolute;
-    height: 50px;
-    width: 150px;
-    margin-left: 160px;
-    border-radius: 10px;
-    transition: left 0.5s, top 0.5s;
-}
-
-.end {
+.end{
     padding-top: 60px;
 }
-
-/* Mobile styles */
 @media screen and (max-width: 768px) {
     #heading {
         font-size: 30px;
@@ -64,13 +61,5 @@
         height: 40px;
         width: 120px;
         font-size: 14px;
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .buttons #yes {
-        margin-right: 5px;
     }
 }
-
-/* Additional mobile styles can be added as needed */
