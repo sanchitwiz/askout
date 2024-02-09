@@ -57,9 +57,16 @@
         height: 250px;
     }
 
-    .buttons #yes, .buttons #no {
+    .buttons #no {
         height: 40px;
         width: 120px;
         font-size: 14px;
+        margin-left: -10px;
+    }
+    .buttons #yes{
+        height: 40px;
+        width: 120px;
+        font-size: 14px;
+        margin-right: -10px;
     }
 }
