@@ -1,55 +1,76 @@
-/* *{
-    padding: 0;
-    margin: 0;
-} */
-.main{
+/* Base styles */
+.main {
     background-color: #ffd7c0;
-    /* background-image: url('main.gif'); */
     color: #212121;
     overflow: hidden;
-    
 }
-.bgImage{
+
+.bgImage {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.container{
-    /* background-color: #ffd7c0;
-    color: #212121; */
+
+.container {
     text-align: center;
     margin: auto;
-    /* padding-top: ; */
 }
-#heading{
+
+#heading {
     font-size: 50px;
 }
-.sigh{
+
+.sigh {
     padding-top: 10px;
-    img{
-        border-radius: 20px;
-        height: 440px;
-    }
-    padding-bottom: 30px;
 }
-.buttons{
-    #yes{
-        height: 50px;
-        width: 150px;
-        margin-left: -300px;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-    #no{
-        cursor: pointer;
-        position: absolute;
-        height: 50px;
-        width: 150px;
-        margin-left: 160px;
-        border-radius: 10px;
-        /* transform: translate(-50%, -50%); */
-        transition: left 0.5s, top 0.5s;
-    }
+
+.sigh img {
+    border-radius: 20px;
+    height: 440px;
 }
-.end{
+
+.buttons #yes {
+    height: 50px;
+    width: 150px;
+    margin-left: -300px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttons #no {
+    cursor: pointer;
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    margin-left: 160px;
+    border-radius: 10px;
+    transition: left 0.5s, top 0.5s;
+}
+
+.end {
     padding-top: 60px;
 }
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    #heading {
+        font-size: 30px;
+    }
+
+    .sigh img {
+        height: 250px;
+    }
+
+    .buttons #yes, .buttons #no {
+        height: 40px;
+        width: 120px;
+        font-size: 14px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .buttons #yes {
+        margin-right: 5px;
+    }
+}
+
+/* Additional mobile styles can be added as needed */
