@@ -57,27 +57,18 @@
         height: 250px;
     }
 
-    .buttons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .buttons #no {
+        height: 40px;
+        width: 120px;
+        font-size: 14px;
+        margin-left: -10px;
     }
 
-    #yes {
-        height: 50px;
-        width: 150px;
-        border-radius: 10px;
-        cursor: pointer;
-        margin: 0 5px; /* Add margin to create separation */
-    }
-
-    #no {
-        cursor: pointer;
-        height: 50px;
-        width: 150px;
-        border-radius: 10px;
-        transition: left 0.5s, top 0.5s;
-        margin: 0 5px; /* Add margin to create separation */
+    .buttons #yes {
+        height: 40px;
+        width: 120px;
+        font-size: 14px;
+        margin-right: -10px;
     }
 
 }
