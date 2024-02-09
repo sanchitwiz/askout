@@ -1,53 +1,64 @@
-.main{
+.main {
     background-color: #ffd7c0;
     color: #212121;
     overflow: hidden;
-    height: 100vh; 
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
-.bgImage{
+
+.bgImage {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.container{
+
+.container {
     text-align: center;
     margin: auto;
 }
-#heading{
+
+#heading {
     font-size: 50px;
 }
-.sigh{
+
+.sigh {
     padding-top: 10px;
-    img{
-        border-radius: 20px;
-        height: 440px;
-    }
-    padding-bottom: 30px;
 }
-.buttons{
-    #yes{
-        height: 50px;
-        width: 150px;
-        margin-left: -300px;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-    #no{
-        cursor: pointer;
-        position: absolute;
-        height: 50px;
-        width: 150px;
-        margin-left: 160px;
-        border-radius: 10px;
-        transition: left 0.5s, top 0.5s;
-    }
+
+.sigh img {
+    border-radius: 20px;
+    height: 440px;
 }
-.end{
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#yes {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 5px; /* Adjusted margin */
+}
+
+#no {
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    transition: left 0.5s, top 0.5s;
+    margin-left: 5px; /* Adjusted margin */
+}
+
+.end {
     padding-top: 60px;
 }
+
 @media screen and (max-width: 768px) {
     #heading {
         font-size: 30px;
@@ -70,5 +81,5 @@
         font-size: 14px;
         margin-right: -10px;
     }
-
 }
+
