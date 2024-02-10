@@ -19,7 +19,7 @@ noButtonFirst.addEventListener('click', () => {
     mainBody.style.backgroundPosition = 'center';
     mainBody.style.backgroundRepeat = 'no-repeat';
     // mainBody.style.filter = 'brightness(0.5)';
-    heading.style.color = 'black';
+    // heading.style.color = 'black';
     heading.innerHTML = 'Pleaseeeee !!!!';
     flag = true;
 
